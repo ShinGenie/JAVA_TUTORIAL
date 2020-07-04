@@ -94,8 +94,8 @@ public class Operater {
 		
 		int ii = c11 + 1;
 		c13 = (char)(c11 + 1);
-		c13++;
-		c12++;
+		c13++; // c11을 두번올림 후위연산
+		c12++;  // 
 		System.out.println(ii + " / " + c12 + " / " + c13);
 		
 		
