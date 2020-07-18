@@ -18,19 +18,19 @@ public class WhileFor {
 	    dto.setContent("鎧遂鎧遂");
 	    
 	    try{
+	    	
 	        Object obj=dto;
 	        for (Field field : obj.getClass().getDeclaredFields()){
 	            field.setAccessible(true);
 	            Object value=field.get(obj);
 				 if(!value.equals("") && value != null){
-//					 int i = 0;
-//						i++;
 					list.add((String)value);
-	            System.out.println(field.getName()+":"+value);
+					System.out.println(field.getName()+":"+value);
+					
 				}
 	        }
 	        
-	        System.out.println(list.size() + "馬馬馬馬馬馬馬馬馬馬馬馬 ");
+	        System.out.println(list + "    馬馬馬馬馬馬馬馬馬馬馬馬 ");
 	        
 	    }catch (Exception e){
 	        e.printStackTrace();
@@ -68,7 +68,7 @@ public class WhileFor {
 //
 //	窒坦: https://hellogk.tistory.com/11 [IT Code Storage]
 	
-	public void countinued() {
+	public void randomNum() {
 		int num = 0;
 		int sum = 0;
 		
@@ -87,6 +87,7 @@ public class WhileFor {
 		int input = 0;
 		int answer = 0;
 		answer = (int)(Math.random()*100) + 1;
+		System.out.println("answer : " + answer);
 		Scanner scanner = new Scanner(System.in);
 	
 		do {
@@ -102,5 +103,6 @@ public class WhileFor {
 		
 		WhileFor whileFor = new WhileFor();
 		whileFor.test();
+		whileFor.randomNum();
 	}
 }
