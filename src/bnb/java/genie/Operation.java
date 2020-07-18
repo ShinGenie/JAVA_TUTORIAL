@@ -1,12 +1,8 @@
 package bnb.java.genie;
 
-import bnb.VarEx1;
-
-
-public class Operater {
+public class Operation {
 	
 	//단항 > 이항 > 삼항 > 대입
-	
 	// <<, >>, >>>는 덧셈연산자보다 우선순위가 낮다
 	// || 는 && 보다 우선순위가 낮다
 	// 증감연산자 
@@ -103,4 +99,4 @@ public class Operater {
 		 
 	}
 	
-}
+}//class end
